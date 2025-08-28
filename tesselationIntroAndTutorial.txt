@@ -24,3 +24,18 @@ L_j(y) = \prod_{q=0, q≠j}^m (y - q) / (j - q)
 this returns you a polynomial where 
 
 M[i,j] = T(i,j)
+
+
+OR
+
+you can use Fourier Interpolation:
+
+T(x,y) = \sum_{p=0}^{N-1} \sum_{q=0}^{M-1} C_{p,q} \, \exp\Big( 2 \pi i \, \Big( \frac{p x}{N} + \frac{q y}{M} \Big) \Big)
+
+where
+
+C_{p,q} = \frac{1}{N M} \sum_{i=0}^{N-1} \sum_{j=0}^{M-1} M[i,j] \,\exp\Big( - 2 \pi i \, \Big( \frac{p i}{N} + \frac{q j}{M} \Big) \Big)
+
+this returns you a trigonometric polynomial where
+
+M[i,j] = T(i,j)
