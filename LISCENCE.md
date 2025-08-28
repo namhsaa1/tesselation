@@ -1,0 +1,2 @@
+Copyright © 2025 Aashman Ladkani. All rights reserved. This work is publicly visible for informational and research purposes only. No part of this repository may be copied, modified, or used for any commercial purpose without explicit written permission from the author. The author retains exclusive rights to patent any applications, implementations, or practical uses derived from this work. 
+August 27th, 2025.
