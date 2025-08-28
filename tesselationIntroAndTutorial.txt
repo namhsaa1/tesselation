@@ -1,0 +1,13 @@
+Copyright © 2025 Aashman Ladkani. All rights reserved.
+
+
+For every discrete matrix, there exists a continuous tessellation function T(x, y) that:
+
+Matches the original matrix at all integer row and column positions.
+
+Provides smooth values for non-integer positions between the rows and columns.
+
+Can be constructed using Lagrange (polynomial) interpolation or Fourier (sine/cosine wave) interpolation.
+
+This allows a matrix to be extended into a smooth surface, useful for interpolation, visualization, and signal processing.
+
