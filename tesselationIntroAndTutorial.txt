@@ -1,5 +1,7 @@
 Copyright © 2025 Aashman Ladkani. All rights reserved.
 
+IF YOU FIND ANY ERRORS IN MY MATH EMAIL ladkani.aashi@gmail.com AND I WILL GIVE YOU CREDIT
+
 Intro:
 For every discrete matrix, there exists a continuous tessellation function T(x, y) that:
 Matches the original matrix at all integer row and column positions.
@@ -7,3 +9,18 @@ Provides smooth values for non-integer positions between the rows and columns.
 Can be constructed using Lagrange (polynomial) interpolation or Fourier (sine/cosine wave) interpolation.
 This allows a matrix to be extended into a smooth surface, useful for interpolation, visualization, and signal processing.
 
+Tutorial:
+To tesselate a matrix M[i,j] (0 ≤ i ≤ n, 0 ≤ j ≤ m) (M is a n x m matrix)
+you can use Lagrangian Interpolation:
+
+T(x,y) = \sum_{i=0}^n \sum_{j=0}^m M[i,j] · L_i(x) · L_j(y)
+
+where
+
+L_i(x) = \prod_{p=0, p≠i}^n (x - p) / (i - p)
+
+L_j(y) = \prod_{q=0, q≠j}^m (y - q) / (j - q)
+
+this returns you a polynomial where 
+
+M[i,j] = T(i,j)
