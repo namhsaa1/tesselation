@@ -13,4 +13,5 @@ Possible uses for this are:
 
 1. Encryption
 2. Upscaling/SuperScaling
-3. ?
+3. Data Analysis
+4. Prediction
