@@ -1,0 +1,13 @@
+Aashman Ladkani, 2025. All Rights Reserved.
+
+So. Once you have the tesselation function, you might be wondering, what other cool stuff could I do with it? 
+
+So... You can rotate a matrix any amount you want. You can also get variants of it. Like what I call an "opposite" (not an inverse)
+
+If you graph the tesselation function and look at it in a way that you cannot see the output of the tesselation function (top down, in a surface plot), you can, take note of the points that compose the matrix (where Matrix[i,j]=T(i,j)), and rotate the surface plot any amount you want, and then find which point on the rotated surface plot correlates to the composing points, you have effectively rotated a matrix. A "opposite" is a rotation this way of 180 degrees, or composing the matrix where Matrix[i,j]=T(-i,-j). Rotations using this way are what I like to call continously rotated matrices (simple, by intuition). I would recommend using fourier interpolation for continous matrix rotation due to the fact that they repeat and I feel like they would give cleaner outputs.
+
+You can also find a "complex variant" of a matrix. You do this by tesselating said matrix, and then composing a matrix from T(i,i), to T(rows*i,columns*i). (where i is the imaginary unit in this scenario, it is the index in other scenarios.)
+
+You can also get what I call "correspondants" of a matrix. Correspondants are if you mirrored the composing points of a Matrix across each axis and constructed a matrix that way, inwards out, where each correspondant starts at plus or minus one in both dimensions. A matrix and its opposite are both correspondants, and it has two more correspondants.
+
+You can also rotate this from a complex axis, which allows you to do very interesting stuff. This excersize is left as a activity for the reader.
